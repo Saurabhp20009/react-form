@@ -1,0 +1,73 @@
+#heading {
+  background-color: black;
+  color: white;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0px;
+}
+
+.head {
+  text-align: center;
+}
+
+.container {
+}
+
+form {
+  padding: 5vh;
+  background-color: darkgray;
+}
+
+label {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.inputClass {
+  background-color: darkgray;
+  outline: 0;
+  border-width: 0 0 2px;
+  border-color: black;
+  border-radius: 0px;
+  width: 50%;
+}
+
+.form-group {
+  display: flex;
+  justify-content: space-around;
+  padding: 1%;
+}
+
+.form-control:focus {
+  background-color: darkgray;
+  outline: none;
+  border-width: 0 0 2px;
+  border-color: black;
+  border-radius: 0px;
+  outline-width: 0 !important;
+}
+
+.addBut {
+  margin-left: 45%;
+  margin-top: 5%;
+}
+
+.buttonform {
+  background-color: black;
+  font-size: 1.2rem;
+  font-weight: bolder;
+}
+
+
+
+.table > :not(caption) > * > *{
+    background-color: #a9a9a9;
+}
+
+th,td,.table {
+    border: 2px solid;
+}
+
+.td{
+    background-color: white;
+}

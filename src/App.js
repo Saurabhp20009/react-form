@@ -1,24 +1,25 @@
-import logo from './logo.svg';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
+import CrudForm from './components/Form';
+import Navbar from './components/navbar';
+import TodoApp from './components/to';
+import Calculator from './components/calculator';
+import CalendarApp from './components/calendar';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <BrowserRouter>
+    <Routes>
+      <Route path='/' element={<Navbar/>}>
+        <Route index element={<CrudForm/>}/>
+        <Route path='/to' element={<TodoApp/>}/>
+        <Route path='/cal' element={<Calculator/>}/>
+        <Route path='/calendar' element={<CalendarApp/>}/>
+      </Route>
+    </Routes>
+    </BrowserRouter>
+    </>
   );
 }
 

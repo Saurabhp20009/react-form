@@ -1,0 +1,112 @@
+.container {
+  width: 100%;
+  max-width: 400px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+.inputpart {
+  display: flex;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5%;
+}
+
+.bodyContent {
+  display: flex;
+  margin: 1vh;
+}
+
+.inputTask {
+  display: flex;
+  width: 70%;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  outline: none;
+  border-width: 1px;
+}
+
+.plus {
+  background-color: #ff6f47;
+  width: 10%;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  padding: 4px;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+button.remove {
+  background-color: #ff3333;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button.remove:hover {
+  background-color: #cc0000;
+}
+
+#remove {
+  background-color: #ff6f47;
+  width: 20%;
+  font-size: 1rem;
+  font-weight: bolder;
+  padding: 4px;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#complete {
+  background-color: #0cd4a2;
+  width: 24%;
+  font-size: 1rem;
+  font-weight: bolder;
+  padding: 4px;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 600px;
+  }
+}
